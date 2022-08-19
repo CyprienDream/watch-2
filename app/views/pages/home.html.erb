@@ -1,0 +1,13 @@
+<h1 data-controller="typedjs">Home</h1>
+<%= link_to "List of lists", lists_path %>
+<br>
+<br>
+
+<% @movies.each do |movie| %>
+  <strong><%= movie.title %></strong><br>
+  <%= movie.poster_url %><br>
+  <%= movie.rating %><br>
+  <%= movie.overview %><br>
+  <br>
+  <br>
+<% end %>
